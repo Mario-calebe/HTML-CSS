@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mim.quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Totalmente Aleatorio Sobre MIM</h1>
+        <p>Quanto você conhece sobre mim? Faça esse quiz e descubra!</p>
+    
+    </header>
+    <div class="nav">
+        <nav>
+            <a href="paginainicial.html">Início</a>
+            <a href="notas.html">Notas</a>
+        
+        </nav>
+    </div>
+    <main class="container">
+        <section class="introdução">
+            <h2>Sobre o Quiz</h2>
+            <p>Este quiz foi criado com intuito de praticar minhas habilidades, mas ja que você está lendo isso, aproveita e gaste um tempinho aqui &#128521;</p>
+        </section>
+        <section>
+        <form class="container">
+                <h2>Pergunta 01: Qual é o meu nome?</h2>
+                <section class="alternativas">
+                    <label for="p1a"><input type="radio" id="p1a" name="pergunta1"value="Mário"> Mário</label>
+                    <label for="p1b"><input type="radio" id="p1b" name="pergunta1" value="Kaleu">
+                    Kaleu</label>
+                    <label for="p1c"><input type="radio" id="p1c" name="pergunta1" value="Josué">
+                    Josué</label>
+                    <label for="p1d"><input type="radio" id="p1d" name="pergunta1" value="João">
+                    João</label>
+                </section>
+                <h2>Pergunta 02: Qual é a minha cor favorita?</h2>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui">
+                <h2>Pergunta 03: Qual é a minha senha favorita?</h2>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua resposta aqui">
+                <h2>Pergunta 04: Data de nascimento</h2>
+                <input type="date" id="p4" name="pergunta4">
+                <h2>Pergunta 05: Abaixo demonstre uma das minhas cores favoritas</h2>
+                <input type="color" id="p5" name="pergunta5">
+                <label for="p5"><strong>Escolha uma cor</strong></label>
+                <h2>Pergunta 06: Em algumas palavras descreva oque você sente sobre mim</h2>
+                <textarea placeholder="Digite aqui..." name="texto" id="p6t" rows="5" cols="40"></textarea>
+                
+            </form>
+        </section>
+        <section>
+            <figure>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>0-2</th>
+                            <td>uau, você sabe meu nome? 🤨</td>
+                        </tr>
+                        <tr>
+                            <th>3-5</th>
+                            <td>Me conhece definitivamente &#128521;</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td>Você me conhece bem &#128512;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot style="text-align: center;">
+                        <tr>
+                            <td colspan="2">
+                                <strong>Boa sorte!</strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </figure>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

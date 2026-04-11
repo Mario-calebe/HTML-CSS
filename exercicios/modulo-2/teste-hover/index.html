@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Houver</title>
+    <style>
+        div {
+            margin-left: 0.4rem;
+        }
+        div > p {
+            display: none;
+        }
+        #p1 {
+            display: block;
+        }
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+            margin: 0px;
+            padding: 0px;
+            row-gap: 10px;
+            width: fit-content;
+        }
+        div:hover::after {
+            content: "«";
+            color: black;
+        }
+        div:hover::before {
+            content: "»";
+            color: black;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Houver</h1>
+    <div>
+        <p id="p1">Passe o mouse aqui</p>
+        <p>Surpresaaa</p>
+    </div>
+    <p>Veja e aprenda</p>
+</body>
+</html>

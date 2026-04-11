@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page de Prática</title>
+
+  <style>
+    /* RESET BÁSICO */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      background-color: #222;
+      color: #fff;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 16px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background-color: #00c46a;
+      color: #fff;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero a:hover {
+      background-color: #00a85a;
+    }
+
+    /* SEÇÃO FEATURES */
+    .features {
+      padding: 60px 40px;
+      background-color: #fff;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #f4f4f4;
+      width: 250px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    /* SOBRE */
+    .about {
+      padding: 60px 40px;
+      background-color: #eaeaea;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .about-text h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .about-box {
+      flex: 1;
+      min-width: 280px;
+      height: 200px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MinhaLanding</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Uma landing page simples</h2>
+    <p>Esse é um site genérico feito apenas com HTML e CSS, usando conceitos básicos e intermediários.</p>
+    <a href="#">Começar agora</a>
+  </section>
+
+  <section class="features">
+    <h3>O que você aprende aqui</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>HTML Semântico</h4>
+        <p>Uso correto de header, section, nav e footer.</p>
+      </div>
+      <div class="card">
+        <h4>Flexbox</h4>
+        <p>Alinhamento, espaçamento e responsividade.</p>
+      </div>
+      <div class="card">
+        <h4>CSS Básico</h4>
+        <p>Cores, espaçamento, hover e display.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h3>Sobre o projeto</h3>
+      <p>Essa landing page foi criada como exercício de prática, focando em organização de layout, estrutura e estilos simples, sem JavaScript.</p>
+    </div>
+    <div class="about-box">
+      IMAGEM / ILUSTRAÇÃO
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 - Landing Page de Prática</p>
+  </footer>
+
+</body>
+</html>

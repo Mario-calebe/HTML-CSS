@@ -1,0 +1,24 @@
+@font-face {
+    font-family: boy;
+    src: url(fonts/CAMPUS\ PERSONAL\ USE.ttf) format('truetype');   
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: girl ;
+    src: url('fonts/Filxgirl.TTF')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+}
+
+body {
+    font-family: boy;
+    font-size: 1.1em;
+}
+h1 {
+    font-family: girl;
+    font-size: 6em;
+}
+

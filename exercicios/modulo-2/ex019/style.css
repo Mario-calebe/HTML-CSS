@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(233, 95, 238, 0.555);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: rgba(173, 3, 179, 0.822);
+}
+
+h2 {
+    color: rgba(247, 0, 255, 0.555);
+}
+
+h1#MVT {
+   color: aquamarine; 
+}
+
+.basico {
+    color: green;
+}
+.avancado {
+    color: red;
+}
+.intermediario {
+    color: rgb(131, 112, 4);
+}

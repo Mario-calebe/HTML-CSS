@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+    <style>
+        header {
+            color: #f3f;
+            background-color: rgba(255, 235, 205, 0.589);
+            width: 19rem;
+            height: 300px;
+            border: 10px solid transparent;
+            padding: 10px;
+            border-image-source: url(border.png);
+            border-image-slice: 30;
+            border-image-repeat: repeat;
+        }
+        a {
+            border: 10px solid red;
+            background-color: thistle;
+            padding: 5px;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Box-level/inline-level</h1>
+    </header>
+    <p>Tanto os parágrafos quantos os h1 são elementos de bloco (box-level), já elementos como &lt;a&gt; e &lt;span&gt; são elementos inline (inline-level).</p>
+    <p>Links não se quebram, como <a href="#">vemos</a> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ex itaque nesciunt obcaecati <br> iusto, quisquam totam similique illum placeat architecto provident perferendis ad. Consequatur officia, aspernatur esse eaque blanditiis tempora.</p>
+</body>
+</html>

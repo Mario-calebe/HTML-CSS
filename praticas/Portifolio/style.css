@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Fundo-geral: #141212;
+    --Texto-principal: #FEFEFE;
+    --Subtítulos: #847E73;
+    --Fundo-segundario: #A49D91;
+    --Destaque: #563D31;
+    --header-bg: #221f1f;
+    --texto: 'JetBrains Mono', monospace;
+    --titulos: 'Roboto', sans-serif;
+}
+body {
+   font-family: var(--texto);
+   background-color: var(--Fundo-geral);
+   color: var(--Texto-principal);
+}
+body h1, body h2, body h3 {
+    font-family: var(--titulos);
+    color: var(--Destaque);
+    
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, var(--header-bg), var(--Fundo-geral));
+    color: var(--Texto-principal);
+    width: 100%;
+    min-height: 10rem;
+    text-align: center;
+    padding: 1rem 1rem 2.5rem 1rem;
+    margin-top: 1rem;
+    max-height: 10.1rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--Destaque);
+    font-family: var(--titulos);
+}
+header p {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--Subtítulos);
+    margin-top: 1rem;
+    max-width: 700px;
+    margin: 0 auto 0.5rem auto;
+
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+    
+nav {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: end;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+}
+nav a {
+    color: var(--Texto-principal);
+    text-decoration: none;
+    padding: 0.5rem; 
+    transition: all 0.3s ease ;
+    border-radius: 5px;
+    font-family: var(--titulos);
+}
+nav a:hover {
+    color: var(--Fundo-segundario);
+    background-color: var(--Destaque);
+    border: var(--Subtítulos) solid 0.1rem;
+
+}

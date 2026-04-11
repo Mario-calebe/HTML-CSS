@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+        }
+        header > h1{
+            margin: 0;
+            padding: 1rem 0px 1rem 0px;
+        }
+        header {
+            background-color: rgb(190, 114, 0);
+            color: #2C3E2E;
+            
+        }
+        nav {
+            background-color: #bb822e;
+            margin-left: 1rem;
+            padding: 3px;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+            nav > a {
+                color: #2C3E2E;
+                text-decoration: none;
+                padding: 0.5rem;
+            }
+            nav > a:hover {
+                background-color: #be7200;
+                color: white;
+                text-decoration: underline;
+            }
+        main {
+            display: flex;
+            flex-direction: column;
+
+            background-color: rgb(190, 114, 0);
+            color: #2C3E2E;
+        }
+        footer > #copy::before {
+            content: "\A9";
+            padding-right: 0.2rem;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #be7200;
+            color: #2C3E2E;
+            column-gap: 0.2rem;
+        }
+        article {
+            display: flex;
+            flex-direction: row;
+            background-color: #bb822e;
+        }
+         aside {
+            margin-left: 1rem;
+            font-size: 0.8rem;
+            background-color: rgba(207, 155, 43, 0.712);
+            width: fit-content;
+            height: fit-content;
+            padding-top: 0.1rem;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NAV1</h1>
+        <nav>
+         <a href="#">HOME</a>
+         <a href="#">CONTATO</a>
+         <a href="#">EMAIL</a>
+         <a href="#">MENU</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Caso de homicidio na bahia</h2>
+            <section>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, eos facilis? Cum voluptatem nam qui ad dolorem rerum enim, voluptate nesciunt magni ipsum pariatur deserunt veniam soluta laborum molestiae corporis!</p>
+                    <aside>Autor: <a href="#">lorem ipsum</a></aside>
+                </article>
+            </section>
+    </main>
+    <footer>
+        <p id="copy">Copyright 2024</p>
+        <p>Desenvolvido por: <a href="#">Caleb</a></p>
+    </footer>
+</body>
+</html>

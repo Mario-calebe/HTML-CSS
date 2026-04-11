@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.b:hover {
+    color: red;
+    text-decoration: underline;
+}
+.c:hover{
+    color: green;
+    font-weight: bold;
+}
+.d:hover{
+    color: black;
+    font-weight: bold;
+}
