@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em e Rem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 20px;
+        }
+        body {
+            font-size: 20px;
+        }
+
+        div.em {
+            font-size: 2em;
+            border: 10px solid purple;
+        }
+        div.rem {
+            font-size: 2rem;
+            border: 10px solid blue;
+        }
+        p.em {
+            font-size: 2em;
+        }
+        p.rem {
+            font-size: 2rem;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="em">
+        <h1>em</h1>
+        <p class="em">Este é um parágrafo que esta dentro de uma div, que tal, está em body.</p>
+    </div>    
+    <!-- Em "em" é relativo ao elemento pai, e seu efeito e acumulativo e multiplicacional, fazendo com que seja proporcional ao tamanho da fonte do elemento pai -->
+    <div class="rem">
+        <h1>rem</h1>
+        <p class="rem">Este é outro parágrafo dentro de uma div diferente.</p>  
+    </div>
+    <!-- "rem" é relativo apenas à fonte do elemento html(elemento Raiz) -->
+</body>
+</html>
