@@ -8,6 +8,7 @@
 html, body {
     background-color: darkgrey;
     min-height: 100vh;
+
 }
 
 header {
@@ -27,7 +28,8 @@ header > p {
 }
 
 section {
-    padding: 10vh 0 10vh 0;
+    padding: 10vh 0 10vh 30px;
+    line-height: 2rem;
 }
 
 section.normal {
@@ -38,6 +40,12 @@ section.imagem {
     background-color: rgb(49, 49, 49);
     color: white;
 }
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 25%;
+}
+
 
 a { 
     color: white;
