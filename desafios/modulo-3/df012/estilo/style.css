@@ -49,16 +49,29 @@ section.normal {
     color: black;
 }
 section.imagem {
-    background-color: rgb(49, 49, 49);
+    background-color: rgba(0, 0, 0, 0.466);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.664);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.473);
     width: fit-content;
     padding: 1rem;
+    text-shadow: 2px 1px 0p x black;
 }
 
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
 
 a { 
     color: white;
