@@ -1,0 +1,36 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    width: 500px;
+    border-collapse:collapse;
+    
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 0.65rem;
+    
+}
+
+td{
+
+    background-color: rgb(187, 133, 231);
+}
+
+thead,tfoot {
+    background-color: rgb(0, 0, 0);
+    color: rgb(195, 0, 255);
+}
+
+
+td:nth-child(2){
+    text-align: right;
+}
+
+tfoot tr > td {
+    font-weight: 900;
+    color: rgb(84, 0, 139);
+    font-family: Arial, Helvetica, sans-serif;
+}
