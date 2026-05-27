@@ -5,23 +5,41 @@ body{
 table{
     width: 500px;
     border-collapse:collapse;
-    
+    margin: auto;
 }
 
-td,th{
-    border: 1px solid black;
-    padding: 0.65rem;
-    
+caption  {
+    position: relative;
+    background-color: rgba(185, 126, 241, 0.438);
+    font-size: 1.6rem;
 }
 
-td{
 
-    background-color: rgb(187, 133, 231);
+
+caption:hover{
+    content: blabla;
 }
+
 
 thead,tfoot {
     background-color: rgb(0, 0, 0);
     color: rgb(195, 0, 255);
+}
+
+td,th{
+    border: 1px solid rgb(180, 49, 219);
+    padding: 0.65rem;
+    
+}
+
+tbody > tr{
+    background-color: rgb(187, 133, 231);
+}
+
+
+tbody > tr:nth-child(2n){
+    background-color: rgba(127, 43, 175, 0.747);
+    
 }
 
 
@@ -31,6 +49,7 @@ td:nth-child(2){
 
 tfoot tr > td {
     font-weight: 900;
-    color: rgb(84, 0, 139);
+    color: rgb(166, 59, 236);
+    background-color: rgba(0, 0, 0, 0.678);
     font-family: Arial, Helvetica, sans-serif;
 }
