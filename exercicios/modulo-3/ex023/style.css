@@ -10,14 +10,27 @@ table{
 
 caption  {
     position: relative;
+    left: 0;
+    top: 0;
     background-color: rgba(185, 126, 241, 0.438);
     font-size: 1.6rem;
+    color: transparent;
+}
+
+caption::after {
+    content:"População das Unidades Federativas";
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+
 }
 
 
 
-caption:hover{
-    content: blabla;
+caption:hover::after{
+    content: "Estados do país lixo(Brasil Ordem e Progresso)";
+    text-align: center;
 }
 
 
