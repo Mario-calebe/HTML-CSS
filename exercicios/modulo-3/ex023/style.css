@@ -1,5 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box; 
 }
 
 table{
@@ -23,7 +24,7 @@ caption::after {
     position: absolute;
     left: 0;
     top: 0;
-
+    
 }
 
 
@@ -34,9 +35,11 @@ caption:hover::after{
 }
 
 
-thead,tfoot {
+thead{
     background-color: rgb(0, 0, 0);
     color: rgb(195, 0, 255);
+    position: sticky;
+    top: -0;
 }
 
 td,th{
@@ -58,6 +61,7 @@ tbody > tr:nth-child(2n){
 
 td:nth-child(2){
     text-align: right;
+    width: 130px;
 }
 
 tfoot tr > td {
@@ -65,4 +69,9 @@ tfoot tr > td {
     color: rgb(166, 59, 236);
     background-color: rgba(0, 0, 0, 0.678);
     font-family: Arial, Helvetica, sans-serif;
+}
+tfoot {
+    background-color: rgb(0, 0, 0);
+    color: rgb(195, 0, 255);
+    
 }
