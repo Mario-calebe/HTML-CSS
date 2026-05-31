@@ -19,10 +19,11 @@ body,html {
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse:collapse; /* border-collapse:separate; */
     width: 60vw;
     min-height: 60vh;
     margin: auto;
+    /* border-spacing: 2px; */
 
 }
 
