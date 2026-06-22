@@ -55,6 +55,7 @@ header {
 .hero a {
     color: #1F2933;
     text-decoration: none;
+    border: #2563EB 2px solid;
     background-color: #3B82F6;
     border-radius: 5px;
     width: 6%;
@@ -114,9 +115,11 @@ h3 {
     border: #020617 2px solid;
     color: #E5E7EB;
     box-shadow: -5px 5px 20px 4px rgba(59, 130, 246, 0.4);
+    transform: translate(-2%,-6%);
+    transition: .7s;
 }
 .card:hover h3 {
-color: #3B82F6;
+    color: #3B82F6;
 } 
 .card {
     box-sizing: border-box;
@@ -124,6 +127,7 @@ color: #3B82F6;
     color: #9CA3AF;
     padding: 1rem;
     border-radius: 0.9rem;
+    border: #111827 2px solid;
     width: 30%;
     margin-top: 2rem;
     font-size: 0.8rem;
@@ -138,6 +142,7 @@ color: #3B82F6;
     justify-content: center;
 }
 .about {
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: #6B7280;
@@ -163,10 +168,12 @@ color: #3B82F6;
     width: 30%;
     height: 100%;
     display: flex;
-    justify-items: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%)
 }
 footer {
     display: flex;
