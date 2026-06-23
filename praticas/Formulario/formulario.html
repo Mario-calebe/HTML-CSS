@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <form autocomplete="on">
+    <Header>
+        <h1>Inscrições curso de HTML/CSS</h1>
+        <P>Preencha o formulário</P>
+    </Header>
+    <main>
+            <section class="dadospessoais">
+                <h2 style="text-indent: 0.5rem;">Dados Pessoais</h2>
+                <div>
+                    <label for="inome">Qual seu nome?</label>
+                    <br>
+                    <input type="text" name="nome" id="inome">
+                </div>
+                <div>
+                    <label for="iy">Sua idade:</label> <br>
+                    <input type="number" min="1" max="120" name="y" id="iy">
+                </div>
+                <div>
+                    <label for="idn">Data de Nascimento</label> <br>
+                    <input type="date" name="dn" id="idn">
+                </div>
+                <div>
+                    <p>Sexo</p>
+                    <input type="radio" name="sx" id="ih">
+                    <label for="ih">Masculino</label>
+                    <input type="radio" name="sx" id="im">
+                    <label for="im">Femenino</label>
+                </div>
+                <div>
+                    <label for="icidade">Qual sua cidade?</label> <br>
+                    <input type="text" name="cidade" id="icidade" list="lista">
+                    <datalist id="lista">
+                        <option>Malhada de Pedras</option>
+                        <option>Brumado</option>
+                        <option>Salvador</option>
+                        <option>Feira de Santana</option>
+                        <option>Vitória da Conquista</option>
+                        <option>Camaçari</option>
+                        <option>Jequié</option>
+                        <option>Itabuna</option>
+                        <option>Lauro de Freitas</option>
+                        <option>Ilhéus</option>
+                        <option>Barreiras</option>
+                        <option>Santo Estêvão</option>
+                        <option>Jacobina</option>
+                        <option>Pau Brasil</option>
+                        <option>Teixeira de Freitas</option>
+                        <option>Guanambi</option>
+                        <option>Valença</option>
+                        <option>Cruz das Almas</option>
+                        <option>Santo Antônio de Jesus</option>
+                        <option>Seabra</option>
+                        <option>Alagoinhas</option>
+                        <option>Bom Jesus da Lapa</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="iemail">E-mail</label> <br>
+                    <input type="email" autocomplete="email" name="email" id="iemail">
+                </div>
+                
+            </section>
+            <fieldset>
+                <legend>Perguntas Gerais</legend>
+                <div>
+                    <p>Qual seu nível em HTML e CSS?</p>
+                    <input type="radio" name="lv" id="a">
+                    <label for="a">Avançado</label>
+                    <input type="radio" name="lv" id="m">
+                    <label for="m">Médio</label>
+                    <input type="radio" name="lv" id="b">
+                    <label for="b">Básico</label>
+                    <input type="radio" name="lv" id="n">
+                    <label for="n">Nulo</label>
+                </div>
+                
+                <div>
+                    <label for="it">Qual seu Intuito em aprender HTML/CSS?</label> <br>
+                    <textarea name="textarea" id="it" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+        </main>
+        <footer>
+            <div>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="APAGAR">
+            </div>
+        </footer>
+        
+        
+    </form>
+</body>
+</html>
