@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* ESTILO PARA TELAS */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 1em;
+}
+
+header{
+    background-color: lightpink;
+}
+
+header h1{
+    padding: .3em;
+    text-align: center;
+}
+
+menu{
+    background-color: pink;
+}
+
+menu ul{
+    background-color: rgb(241, 123, 143);
+    list-style-type: none;
+}
+
+menu li{
+     color: slateblue;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 1em;
+    background-color:rgb(243, 104, 127) ;
+
+}
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}

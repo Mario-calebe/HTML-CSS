@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* ESTILOS PARA IMPRESSORAS */
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'Esse teste de media query foi proposto pelo Gustavo Guanaba do Curso em Video';
+}
