@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* Aparelho em pé (portrait) */
+
+html,body{
+    background-color: rgb(48, 66, 23);
+    background-image: url(../imagens/cev-portrait.jpg);
+    
+}
+
+div:hover{
+    background-color: rgb(89, 0, 124);
+    border-radius: 50%;
+    border: 20px dashed whitesmoke;
+}
