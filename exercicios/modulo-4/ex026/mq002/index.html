@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/portrait.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilos/landscape.css" media="screen and (orientation: landscape)">
+    <style>
+        @charset "UTF-8";
+        /* Declarações Gerais */
+        @media all {
+            /* Configurações gerais */
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            html,body{
+                width: 100vw;
+                height: 100vh;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: violet;
+                background-size: cover ;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            h1{
+                color: blueviolet;
+                text-align: center;
+                text-shadow: 5px 3px 3px bisque;
+            }
+
+            div{
+                width: 300px;
+                height: 300px;
+                background-color: rgb(255, 0, 255);
+                border-radius: 50%;
+                border: 10px solid black;
+            }            
+        }
+        /* Declarações Retrato */
+        @media screen and (orientation: portrait) {
+            /* Aparelho em pé (portrait) */
+
+            html,body{
+                background-color: rgb(48, 66, 23);
+                background-image: url(../imagens/cev-portrait.jpg);
+                
+            }
+
+            div:hover{
+                background-color: rgb(89, 0, 124);
+                border-radius: 50%;
+                border: 20px dashed whitesmoke;
+            }
+        } 
+        /* Declarações Paisagem */
+        @media screen and (orientation: landscape) {
+            /* Aparelho deitado (landscape) */
+            html,body{
+                background-image: url(../imagens/cev-landscape.jpg);
+            }
+
+            div:hover{
+                background-color: aqua;
+                border-radius: 25%;
+                border: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Mude a orientação (Vertical or Horizontal) Do seu Celular</h1>
