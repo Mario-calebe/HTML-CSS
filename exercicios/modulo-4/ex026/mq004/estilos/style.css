@@ -45,8 +45,13 @@ img{
     margin: auto;
 }
 
+footer{
+    display: none;
+}
+
 img#cll{display: block;}
 img#tabelete{display: none;}
 img#print{display: none;}
 img#desktop{display: none;}
 img#tv{display: none;}
+
