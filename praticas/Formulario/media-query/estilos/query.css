@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px){
+    
+    main{
+        width: 768px;
+        margin: auto;
+    }
+
+    .nome,.idade,.email,.curso{
+        width: 47%;
+        display: inline-block;
+    }
+
+    #icurso{
+        display: block;
+    }
+}

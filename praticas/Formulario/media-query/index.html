@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form+ Media Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/query.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Inscrição Workshop Dev</h1>
+        </header>
+        <main>
+            <form action="" autocomplete="on">
+                <div class="nome">
+                    <label for="iname">Nome:</label>
+                    <input type="text" name="name" id="iname" placeholder="Digite..." autocomplete="name">
+                </div>
+                <div class="idade">
+                    <label for="iyears">Idade:</label>
+                    <input type="number" name="years" id="iyears" autocomplete="bday-year" placeholder="Digite...">
+                </div>
+                <div class="email">
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite...">
+                </div>
+                <div class="curso">
+                    <label for="icurso">Curso:</label>
+                    <select name="curso" id="icurso">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>Java Script</option>
+                        <option>Php</option>
+                    </select>
+                </div>
+                <div class="mensagem">
+                    <label for="imsg">Mensagem:</label>
+                    <textarea name="msg" id="imsg" placeholder="Digite..."></textarea>
+                </div>
+                <div class="termos">
+                    <input type="checkbox" name="termos" id="itermos" required>
+                    <label for="itermos">Aceito os termos</label>
+                </div>
+                <div><input type="submit" value="Enviar Dados"></div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
