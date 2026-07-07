@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
     <meta charset="UTF-8">
+    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexbox centralizada</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            body{
+                background-color: lightcoral ;
+            }
+
+            main{
+                background-color: lightblue;
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main > section{
+                background-color: lightgreen;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <h>Tela de login</h>
+        </section>
+    </main>
 </body>
 </html>
