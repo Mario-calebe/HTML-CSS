@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.container{
+            background-color: antiquewhite;
+            height: 100vh;
+
+            display: flex;
+            flex-flow: column wrap;
+        }
+        
+        div.item{
+            height: 300px;
+            background-color: violet;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de item 1</div>
+        <div class="item">Exemplo de item 2</div>
+        <div class="item">Exemplo de item 3</div>
+        <div class="item">Exemplo de item 4</div>
+        <div class="item">Exemplo de item 5</div>
+        <div class="item">Exemplo de item 6</div>
+        <div class="item">Exemplo de item 7</div>
+    </div>
+</body>
+</html>
