@@ -8,29 +8,37 @@
         div.container{
             background-color: antiquewhite;
             display: flex;
-            flex-flow: row nowrap;
-            height: 100px;
-            align-items: center;
-
+            flex-flow: row wrap;
         }
             
         div.item{
             background-color: violet;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 420px;
-        }
-         #cxA{ 
+            flex-basis: 150px;
             flex-shrink: 1;
             flex-grow: 0;
+        }
+         #cxA{ 
+            /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 200px; */
+
+            flex: 1 0 200px;
         } 
         #cxB{
-            flex-shrink: 2;
-            flex-grow: 0;
+            /* flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px; */
+
+            flex: 1 1 150px;
         }
         #cxC{
-            flex-shrink:  1;
-            flex-grow: 0 ;
+            /* flex-shrink:  8;
+            flex-grow: 1 ;
+            flex-basis: auto; */
+
+            flex: 1 8 auto; 
         } 
 
     </style>
@@ -42,4 +50,4 @@
         <div class="item" id="cxC">3</div>
     </div>
 </body>
-</html>
+</html> 
