@@ -23,8 +23,14 @@ h1{
     text-shadow: 2px 3px 0px black;
     /* border: 1px dotted black; */
 }
+#menu{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+}
 nav{
-    display: flex;
+    display: none;
     flex-flow: column nowrap;
     justify-content:space-evenly;
     /* border: 1px dotted black; */
@@ -60,8 +66,8 @@ article{
     header{
         text-align: left;
         flex-flow: row wrap;
-        justify-content: space-between;
-        row-gap: 5px;
+        justify-content: flex-start;
+        gap: 50px;
     }
     h1{
         align-items: flex-start;
@@ -72,5 +78,8 @@ article{
         justify-content: space-around;
         align-items: center;
         flex: 0 0 550px;
+    }
+    #menu{
+        order: 3;
     }
 }
