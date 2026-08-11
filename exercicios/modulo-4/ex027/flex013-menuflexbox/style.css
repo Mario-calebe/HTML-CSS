@@ -20,14 +20,14 @@ header{
 }
 h1{
     color: white;
-    text-shadow: 2px 3px 4px black;
-    border: 1px dotted black;
+    text-shadow: 2px 3px 0px black;
+    /* border: 1px dotted black; */
 }
 nav{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-    border: 1px dotted black;
+    justify-content:space-evenly;
+    /* border: 1px dotted black; */
     flex: 0 0 310px;
 }
 header > nav > a{
@@ -46,13 +46,17 @@ a:hover{
 main{
     padding: 10px;
     background-color: rgb(234, 235, 229);
+
+    display: flex;
+    justify-content: center;
 }
 article{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
+    max-width: 700px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     header{
         text-align: left;
         flex-flow: row wrap;
