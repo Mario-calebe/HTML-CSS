@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueryList</title>
+    <style>
+        div{
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>MatchMedia()</h1>
+    <div></div>
+    <p id="para"></p>
+    <script>
+        const caixa = document.querySelector('body > div')
+        const para = document.getElementById('para')
+        const mql = matchMedia('(width <= 600px)')
+        
+        function largura() {
+            const larguraWindow = window.innerWidth
+            para.textContent = 'largura atual: ' + larguraWindow
+            if (mql.matches) {
+                caixa.style.background = 'red'
+            }else{
+                caixa.style.background = 'blue'
+            }
+        }
+
+        largura()
+        window.addEventListener('resize', largura)
+    </script>
+</body>
+</html>
