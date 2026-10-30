@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário acessível</title>
+    <style>
+        :focus-visible{
+            outline: 3px solid black;
+            outline-offset: 3px;
+        }
+
+        body{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .agendamento{
+            max-width: 700px;
+            background-color:darkgrey;
+            border-radius: .5rem;
+            border: 1px solid black;
+            padding: .8rem;
+
+            h1{
+                text-align: center;
+            }
+        }
+        .formulario{
+            display: flex;
+            flex-flow: column;
+            gap: .5rem;
+           
+        }
+
+        .msgerror{
+            color: rgb(59, 2, 2);
+            margin: 0;
+        }
+
+        .msgerror:empty{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="agendamento">
+            <h1>Formulário acessível</h1>
+            <form action="" class="formulario" novalidate>
+                <label for="name">Nome:</label>
+                <input type="text" name="nome" id="name" autocomplete="name" required aria-describedby="name-erro">
+                <p id="name-erro" class="msgerror"></p>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required autocomplete="email" aria-describedby="email-erro">
+                <p id="email-erro" class="msgerror"></p>
+                
+                <label for="zap">WhatsApp:</label>
+                <input type="tel" name="telefone" id="zap" required pattern="\(?\d{2}\)?\s?\d{5}-?\d{4}" aria-describedby="zap-dica zap-erro">
+                <small id="zap-dica">Ex.: (11) 91234-5678</small>
+                <p id="zap-erro" class="msgerror"></p>
+                
+                <label for="servico">Serviços:</label>
+                <select name="servicos" id="servico" required aria-describedby="servico-erro">
+                    <option value="">Selecione um serviço</option>
+                    <option value="corte">Corte</option>
+                    <option value="barba">Barba</option>
+                    <option value="sobrancelha">Sobrancelha</option>
+                </select>
+                <p id="servico-erro" class="msgerror"></p>
+
+                <fieldset>
+                    <legend>Período</legend>
+                    <input type="radio" name="periodo" id="manha" value="manha">
+                    <label for="manha">Matutino</label>
+                    <input type="radio" name="periodo" id="tarde" value="tarde">
+                    <label for="tarde">Vespertino</label>
+                    <input type="radio" name="periodo" id="noite" value="noite">
+                    <label for="noite">Noturno</label>
+                </fieldset>
+
+                <div>
+                    <input type="checkbox" name="termo" id="termos" required aria-describedby="termos-erro">
+                    <label for="termos">Clique aqui para podermos entrar em contato com você</label>
+                    <p id="termos-erro" class="msgerror"></p>
+                </div>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
