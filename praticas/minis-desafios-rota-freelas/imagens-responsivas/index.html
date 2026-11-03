@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+    <style>
+        *{box-sizing: border-box;}
+
+        body{
+            margin: 0;
+        }
+
+        .cortes{
+            padding: 1.5rem;
+            
+            img{
+                margin-bottom: 1.3rem;
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .espaco-vazio{
+            min-height:300vh ;
+        }
+
+        @media screen and (min-width: 48rem) {
+            .galeria{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 48rem)" srcset="Imagens/foto-desktop.jpg"
+            width="1280" height="720">
+            <img src="Imagens/foto-mobile.jpg" alt="Entrada de barbearia" width="750" height="1000" fetchpriority="high">
+        </picture>
+        <h1>Barbearia Exemplo</h1>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <h2>Sobre a barbearia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, ducimus nemo fuga nam quibusdam hic eius quae consequuntur amet velit odio temporibus animi laudantium, itaque eos minima dolor optio quasi!</p>
+            <div class="espaco-vazio">
+
+            </div>
+        </section>
+
+        <section class="cortes">
+            <h2>Nossos cortes</h2>
+            <div class="galeria">
+                <img src="Imagens/foto1-400.jpg"
+                alt="Corte moicano"
+                srcset="Imagens/foto1-400.jpg 400w, Imagens/foto1-800.jpg 800w"
+                sizes="(min-width: 48rem) 33vw, 100vw" 
+                width="400" height="480"
+                loading="lazy">
+
+                <img src="Imagens/foto2-400.jpg"
+                alt="Corte americano"
+                srcset="Imagens/foto2-400.jpg 400w, Imagens/foto2-800.jpg 800w"
+                sizes="(min-width: 48rem) 33vw, 100vw"
+                width="400" height="480"
+                loading="lazy">
+
+                <img src="Imagens/foto3-400.jpg"
+                 alt="Corte social"
+                srcset="Imagens/foto3-400.jpg 400w, Imagens/foto3-800.jpg 800w"
+                sizes="(min-width: 48rem) 33vw, 100vw"
+                width="400" height="480"
+                loading="lazy">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
